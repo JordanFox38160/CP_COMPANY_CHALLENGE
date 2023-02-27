@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'kanit-bold-semibold';
+    src: local('kanit-bold'), url(../assets-metropolis/fonts/kanit-semibold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'kanit-bold-bold';
+    src: local('kanit-bold'), url(../assets-metropolis/fonts/kanit-bold.woff2) format('woff');
+}
+
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0;
+}
+
+h1,
+h2 {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.navbar li {
+    list-style: none;
+    padding: none;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.logo_right {
+    display: flex;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+.name_compagny {
+    text-align: center;
+    color: white;
+    margin-top: -50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+}
+
+.cp {
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+
+}
+
+.compagny {
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+i {
+    font-size: 25px;
+}
+
+.collection_title {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.new_collection {
+    font-size: clamp(10px, 8vw, 190px);
+    font-family: 'kanit-bold-bold';
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.metropolis_series {
+    font-size: clamp(10px, 8vw, 190px);
+    font-family: 'kanit-bold-bold';
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 5px white;
+    margin-bottom: 20px;
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+.imageboard {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.img {
+    width: 100%;
+    height: 750px;
+}
+
+.image_container1 {
+    width: 100%;
+    height: 100%;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+}
+
+.image_container2 {
+    width: 100%;
+    height: 100%;
+    animation-name: slideInUp2;
+    -webkit-animation-duration: 1s;
+}
+
+.image_container3 {
+    width: 100%;
+    height: 100%;
+    animation-name: slideInUp3;
+    -webkit-animation-duration: 1s;
+}
+
+.background_color_black {
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp2 {
+    0% {
+        -webkit-transform: translateY(70%);
+        transform: translateY(70%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideInUp3 {
+    0% {
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
